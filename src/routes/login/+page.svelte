@@ -5,7 +5,7 @@
   let { form }: { form: ActionData } = $props();
 </script>
 
-<h1>Login/Register</h1>
+<h1>Login</h1>
 <form method="post" action="?/login" use:enhance>
   <label>
     Username
@@ -16,6 +16,5 @@
     <input type="password" name="password" class="form-control" />
   </label>
   <button class="btn btn-primary">Login</button>
-  <button formaction="?/register" class="btn btn-primary">Register</button>
 </form>
 <p style="color: red">{form?.message ?? ''}</p>
